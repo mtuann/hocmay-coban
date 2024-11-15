@@ -49,15 +49,15 @@ Các phương pháp phổ biến để tạo ra **word embeddings** bao gồm:
 Word embeddings thường được huấn luyện với các thuật toán như **Skip-Gram** hoặc **CBOW (Continuous Bag of Words)** trong mô hình **Word2Vec**.
 
 - **Skip-Gram**: Dự đoán các từ trong ngữ cảnh (context) dựa trên một từ mục tiêu.
-  $$
+$$
   P(\text{context} | \text{target}) = \prod_{i=1}^{C} P(w_i | w_{\text{target}})
-  $$
+$$
   Trong đó $C$ là kích thước cửa sổ ngữ cảnh, và $w_i$ là các từ trong cửa sổ ngữ cảnh của từ mục tiêu.
 
 - **CBOW**: Dự đoán từ mục tiêu từ các từ trong ngữ cảnh.
-  $$
+$$
   P(w_{\text{target}} | \text{context}) = \prod_{i=1}^{C} P(w_{\text{target}} | w_i)
-  $$
+$$
 
 Các từ trong mô hình Word2Vec được ánh xạ thành các vector trong không gian **d-dimensional** (ví dụ: 100, 300 hoặc 500 chiều). Các từ có cùng ý nghĩa hoặc xuất hiện trong ngữ cảnh tương tự sẽ có vector gần nhau.
 

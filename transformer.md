@@ -28,9 +28,9 @@ Giả sử ta có một chuỗi đầu vào **X** có chiều dài là **n** và
 
 - Đầu vào: $Q = XW_Q$, $K = XW_K$, $V = XW_V$, trong đó $W_Q, W_K, W_V$ là các ma trận trọng số học được.
 - Cơ chế chú ý tính toán:
-  $$
+$$
   Attention(Q, K, V) = softmax\left(\frac{QK^T}{\sqrt{d_k}}\right)V
-  $$
+$$
   Trong đó:
   - $Q$ là **Query** (truy vấn)
   - $K$ là **Key** (chìa khóa)
@@ -38,9 +38,9 @@ Giả sử ta có một chuỗi đầu vào **X** có chiều dài là **n** và
   - $d_k$ là chiều dài của vector **Key**.
   
 - **Multi-head attention** là việc chia $Q$, $K$, và $V$ thành $h$ phần (với mỗi phần có kích thước nhỏ hơn) và tính toán **Attention** độc lập cho mỗi phần, sau đó kết hợp các kết quả.
-  $$
+$$
   MultiHead(Q, K, V) = Concat(head_1, head_2, ..., head_h)W^O
-  $$
+$$
   Trong đó $W^O$ là ma trận trọng số.
 
 **Lớp 2: Position-wise Feed Forward Network**
@@ -79,9 +79,9 @@ Decoder trong Transformer tương tự như Encoder nhưng có thêm một cơ c
 **Lớp 2: Encoder-Decoder Attention**
 
 - Mục đích của Encoder-Decoder Attention là sử dụng thông tin từ phần encoder:
-  $$
+$$
   Attention_{Enc-Dec}(Q, K, V) = softmax\left(\frac{QK^T}{\sqrt{d_k}}\right)V
-  $$
+$$
   Trong đó:
   - $Q$ đến từ Decoder.
   - $K$, $V$ đến từ Encoder.

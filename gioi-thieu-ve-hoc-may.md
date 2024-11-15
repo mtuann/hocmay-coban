@@ -64,19 +64,19 @@ Mục tiêu trong học có giám sát là tối ưu hóa các trọng số $w$ 
   Công thức phân cụm K-means:
   1. Khởi tạo $K$ centroid ngẫu nhiên.
   2. Phân nhóm các điểm dữ liệu theo khoảng cách tới các centroid gần nhất:
-  $$
+$$
   C_i = \arg \min_k \| x_i - c_k \|^2
-  $$
+$$
   3. Cập nhật lại các centroid dựa trên trung bình của các điểm trong nhóm:
-  $$
+$$
   c_k = \frac{1}{|C_k|} \sum_{x_i \in C_k} x_i
-  $$
+$$
 - **Giảm chiều dữ liệu (Dimensionality Reduction)**: Rút gọn số chiều của dữ liệu trong khi vẫn giữ lại các thông tin quan trọng. Một kỹ thuật phổ biến là **Phân tích thành phần chính (PCA)**.
 
   Phương trình PCA:
-  $$
+$$
   Z = X W
-  $$
+$$
   Trong đó:
   - $X$ là ma trận dữ liệu đầu vào (dạng $n \times m$, với $n$ là số lượng điểm dữ liệu và $m$ là số đặc trưng),
   - $W$ là ma trận các vector riêng (eigenvectors) của ma trận hiệp phương sai.

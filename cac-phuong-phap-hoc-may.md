@@ -36,17 +36,17 @@ $$
    - **SVM (Support Vector Machine)**: Là một phương pháp phân loại mạnh mẽ, phân tách các lớp dữ liệu bằng một siêu phẳng (hyperplane) tối ưu.
    
      Công thức của SVM:
-  $$
+$$
      f(x) = w^T x + b
-  $$
+$$
      Trong đó $w$ là trọng số và $b$ là hệ số chệch. Phân loại được xác định qua việc tìm siêu phẳng tối ưu phân tách các lớp.
 
 3. **K-nearest Neighbors (K-NN)**: Phương pháp phân loại hoặc hồi quy dựa trên việc tìm k điểm gần nhất trong không gian đặc trưng và dựa trên nhãn của chúng để đưa ra dự đoán.
 
    - Công thức tính khoảng cách Euclidean giữa hai điểm $x_i$ và $x_j$ là:
-  $$
+$$
      d(x_i, x_j) = \sqrt{\sum_{k=1}^{n} (x_{ik} - x_{jk})^2}
-  $$
+$$
 
 4. **Thuật toán cây quyết định (Decision Trees)**: Dựa trên các quyết định phân nhánh để phân loại hoặc dự đoán giá trị liên tục.
 
@@ -73,9 +73,9 @@ $$
        4. Cập nhật centroid theo trung bình các điểm trong mỗi cụm.
    
      Công thức tính khoảng cách trong K-means:
-  $$
+$$
      d(x_i, c_k) = \| x_i - c_k \|^2
-  $$
+$$
      Trong đó $c_k$ là centroid của cụm $k$.
 
 2. **Giảm Chiều Dữ Liệu (Dimensionality Reduction)**: Rút gọn số chiều của dữ liệu mà không làm mất quá nhiều thông tin. Một kỹ thuật phổ biến là **Phân tích thành phần chính (PCA)**.
