@@ -32,9 +32,9 @@ $$
 
    Điểm số thu được ở bước trên sẽ được đưa vào hàm **softmax** để chuyển đổi thành xác suất, đảm bảo tổng của các trọng số attention là 1. Điều này giúp mô hình "tập trung" vào những phần quan trọng nhất:
 
-   $$
+$$
    \alpha_{i} = \frac{ \exp(\text{Score}(Q, K_i)) }{ \sum_j \exp(\text{Score}(Q, K_j)) }
-   $$
+$$
 
    Trong đó, $\alpha_{i}$ là trọng số attention cho phần tử thứ $i$, $K_i$ là key tương ứng với phần tử thứ $i$.
 
@@ -42,9 +42,9 @@ $$
 
    Trọng số này được sử dụng để tính toán giá trị đầu ra, bằng cách nhân nó với Value (V) tương ứng với mỗi Key:
 
-   $$
+$$
    \text{Output} = \sum_{i} \alpha_{i} V_i
-   $$
+$$
 
    Kết quả này là đầu ra của phần tử query, dựa trên mức độ chú ý vào các phần tử trong chuỗi đầu vào.
 
@@ -63,14 +63,6 @@ Một phiên bản cải tiến của Attention là **Scaled Dot-Product Attenti
 $$
 \text{Score}(Q, K) = \frac{Q^T K}{\sqrt{d_k}}
 $$
-
-<!-- $$
-\text{Score}(Q, K) = Q^T K
-$$
-
-\[
-\text{Score}(Q, K) = Q^T K
-\] -->
 
 
 Ở đây, $d_k$ là chiều dài của vector Key (hoặc Query), và $\sqrt{d_k}$ là bước chia để chuẩn hóa.
