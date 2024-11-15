@@ -24,10 +24,10 @@ $$
 y = w_1 x_1 + w_2 x_2 + ... + w_n x_n + b
 $$
 
-   Trong đó:
-      - $w_1, w_2, ..., w_n$ là các trọng số (weights),
-      - $b$ là hệ số chệch (bias),
-      - $x_1, x_2, ..., x_n$ là các đặc trưng đầu vào.
+Trong đó:
+   - $w_1, w_2, ..., w_n$ là các trọng số (weights),
+   - $b$ là hệ số chệch (bias),
+   - $x_1, x_2, ..., x_n$ là các đặc trưng đầu vào.
 
    - **Hồi quy phi tuyến (Non-linear Regression)**: Áp dụng cho các dữ liệu có mối quan hệ phi tuyến.
 
