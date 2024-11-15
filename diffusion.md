@@ -54,6 +54,11 @@ $$
 \mathcal{L}(\theta) = \mathbb{E}_{q(x_0)} \left[ D_{KL} \left( q(x_T | x_0) \| p_\theta(x_T) \right) \right]
 $$
 
+$$
+\mathcal{L}(\theta) = \mathbb{E}_{q(x_0)} \left[ D_{\text{KL}} \left( q(x_T | x_0) \| p_\theta(x_T) \right) \right]
+$$
+
+
 Trong đó:
 - $q(x_T | x_0)$ là phân phối dữ liệu theo quá trình khuếch tán (forward process).
 - $p_\theta(x_T)$ là phân phối dữ liệu theo mô hình ngược (reverse process).
