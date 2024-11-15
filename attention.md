@@ -64,6 +64,15 @@ $$
 \text{Score}(Q, K) = \frac{Q^T K}{\sqrt{d_k}}
 $$
 
+$$
+\text{Score}(Q, K) = Q^T K
+$$
+
+\[
+\text{Score}(Q, K) = Q^T K
+\]
+
+
 Ở đây, $d_k$ là chiều dài của vector Key (hoặc Query), và $\sqrt{d_k}$ là bước chia để chuẩn hóa.
 
 ### **Multi-Head Attention**
