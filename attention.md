@@ -22,9 +22,9 @@ Công thức cơ bản của attention có thể được mô tả qua các bư�
 
    Để tính mức độ "chú ý" giữa Query và Key, ta sử dụng một hàm similarity. Một trong những cách phổ biến là sử dụng **product vô hướng (dot product)** giữa Query và Key:
 
-   $$
-   \text{Score}(Q, K) = Q^T K
-   $$
+$$
+\text{Score}(Q, K) = Q^T K
+$$
 
    Kết quả của phép toán này là một điểm số thể hiện mức độ tương đồng giữa query và key. Nếu điểm số này cao, điều đó có nghĩa là phần tử đầu vào có ảnh hưởng lớn hơn đến phần tử hiện tại trong chuỗi.
 
@@ -64,13 +64,13 @@ $$
 \text{Score}(Q, K) = \frac{Q^T K}{\sqrt{d_k}}
 $$
 
-$$
+<!-- $$
 \text{Score}(Q, K) = Q^T K
 $$
 
 \[
 \text{Score}(Q, K) = Q^T K
-\]
+\] -->
 
 
 Ở đây, $d_k$ là chiều dài của vector Key (hoặc Query), và $\sqrt{d_k}$ là bước chia để chuẩn hóa.
