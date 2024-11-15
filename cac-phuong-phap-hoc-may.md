@@ -19,9 +19,9 @@ Mục tiêu của học có giám sát là xây dựng một mô hình mà khi �
    - **Hồi quy tuyến tính (Linear Regression)** là mô hình đơn giản và phổ biến.
    
      Công thức hồi quy tuyến tính:
-     $$
-     y = w_1 x_1 + w_2 x_2 + ... + w_n x_n + b
-     $$
+      $
+      y = w_1 x_1 + w_2 x_2 + ... + w_n x_n + b
+      $
      Trong đó:
      - $w_1, w_2, ..., w_n$ là các trọng số (weights),
      - $b$ là hệ số chệch (bias),
@@ -36,17 +36,17 @@ Mục tiêu của học có giám sát là xây dựng một mô hình mà khi �
    - **SVM (Support Vector Machine)**: Là một phương pháp phân loại mạnh mẽ, phân tách các lớp dữ liệu bằng một siêu phẳng (hyperplane) tối ưu.
    
      Công thức của SVM:
-     $$
+     $
      f(x) = w^T x + b
-     $$
+     $
      Trong đó $w$ là trọng số và $b$ là hệ số chệch. Phân loại được xác định qua việc tìm siêu phẳng tối ưu phân tách các lớp.
 
 3. **K-nearest Neighbors (K-NN)**: Phương pháp phân loại hoặc hồi quy dựa trên việc tìm k điểm gần nhất trong không gian đặc trưng và dựa trên nhãn của chúng để đưa ra dự đoán.
 
    - Công thức tính khoảng cách Euclidean giữa hai điểm $x_i$ và $x_j$ là:
-     $$
+     $
      d(x_i, x_j) = \sqrt{\sum_{k=1}^{n} (x_{ik} - x_{jk})^2}
-     $$
+     $
 
 4. **Thuật toán cây quyết định (Decision Trees)**: Dựa trên các quyết định phân nhánh để phân loại hoặc dự đoán giá trị liên tục.
 
@@ -73,9 +73,9 @@ Mục tiêu của học có giám sát là xây dựng một mô hình mà khi �
        4. Cập nhật centroid theo trung bình các điểm trong mỗi cụm.
    
      Công thức tính khoảng cách trong K-means:
-     $$
+     $
      d(x_i, c_k) = \| x_i - c_k \|^2
-     $$
+     $
      Trong đó $c_k$ là centroid của cụm $k$.
 
 2. **Giảm Chiều Dữ Liệu (Dimensionality Reduction)**: Rút gọn số chiều của dữ liệu mà không làm mất quá nhiều thông tin. Một kỹ thuật phổ biến là **Phân tích thành phần chính (PCA)**.
@@ -83,9 +83,9 @@ Mục tiêu của học có giám sát là xây dựng một mô hình mà khi �
    - **PCA** giúp tìm ra các thành phần chính, giúp giảm bớt số chiều mà vẫn giữ được hầu hết các thông tin.
    
    Phương trình PCA:
-   $$
+   $
    Z = X W
-   $$
+   $
    Trong đó:
    - $X$ là ma trận dữ liệu (có dạng $n \times m$),
    - $W$ là ma trận các vector riêng (eigenvectors).
@@ -114,9 +114,9 @@ Mục tiêu của học có giám sát là xây dựng một mô hình mà khi �
 Q-learning là một thuật toán học tăng cường mạnh mẽ, trong đó tác nhân học cách tối ưu hóa hành động thông qua một bảng giá trị $Q(s, a)$, đại diện cho phần thưởng tối đa mà tác nhân có thể nhận được từ trạng thái $s$ khi thực hiện hành động $a$.
 
 Cập nhật giá trị Q theo công thức:
-$$
+$
 Q(s_t, a_t) \leftarrow Q(s_t, a_t) + \alpha \left[ r_{t+1} + \gamma \max_{a'} Q(s_{t+1}, a') - Q(s_t, a_t) \right]
-$$
+$
 Trong đó:
 - $Q(s_t, a_t)$ là giá trị của hành động $a_t$ tại trạng thái $s_t$,
 - $\alpha$ là tốc độ học (learning rate),
