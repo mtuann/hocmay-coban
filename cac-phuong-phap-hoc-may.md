@@ -20,7 +20,7 @@ Mục tiêu của học có giám sát là xây dựng một mô hình mà khi �
    
      Công thức hồi quy tuyến tính:
 $$
-      y = w_1 x_1 + w_2 x_2 + ... + w_n x_n + b
+   y = w_1 x_1 + w_2 x_2 + ... + w_n x_n + b
 $$
      Trong đó:
      - $w_1, w_2, ..., w_n$ là các trọng số (weights),
