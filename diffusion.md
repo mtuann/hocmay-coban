@@ -58,6 +58,9 @@ $$
 \mathcal{L}(\theta) = \mathbb{E}_{q(x_0)} \left[ D_{\text{KL}} \left( q(x_T | x_0) \| p_\theta(x_T) \right) \right]
 $$
 
+$$
+p_\theta(x_{t-1} | x_t) = \mathcal{N}(x_{t-1}; \mu_\theta(x_t, t), \sigma_\theta^2(t))
+$$
 
 Trong đó:
 - $q(x_T | x_0)$ là phân phối dữ liệu theo quá trình khuếch tán (forward process).
