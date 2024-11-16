@@ -148,9 +148,7 @@ Trong đó $c_k$ là centroid của cụm $k$.
 2. Tính ma trận hiệp phương sai.
 3. Tính các vector riêng (eigenvectors) và giá trị riêng (eigenvalues) của ma trận hiệp phương sai.
 4. Chọn các vector riêng có giá trị riêng lớn nhất.
-5.
-
- Dự đoán các thành phần chính của dữ liệu.
+5. Dự đoán các thành phần chính của dữ liệu.
 
 ---
 

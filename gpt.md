@@ -45,17 +45,17 @@ Ví dụ:
     
     Mỗi token trong câu sẽ được ánh xạ vào một vector embedding có chiều dài $d$ (ví dụ $d = 512$).
 
-    $$
+ $$
     \text{Input shape} = (B, T)
-    $$
+ $$
 
     Ví dụ, nếu $B = 2$ và $T = 10$, thì input sẽ có shape là $(2, 10)$.
 
 - **Output Shape**: Output của GPT là một tensor có shape tương tự như input nhưng chiều cuối cùng là kích thước của vocab (số lượng token trong từ điển của mô hình).
   
-    $$
+ $$
     \text{Output shape} = (B, T, V)
-    $$
+ $$
     Trong đó:
     - $B$ là batch size,
     - $T$ là số token trong câu,

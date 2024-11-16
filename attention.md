@@ -58,7 +58,7 @@ Tóm lại, quy trình tính toán attention cho một **Query** duy nhất có 
 
 ### **Scaled Dot-Product Attention**
 
-Một phiên bản cải tiến của Attention là **Scaled Dot-Product Attention**, được sử dụng trong các mô hình Transformer. Trong phương pháp này, thay vì tính trực tiếp sản phẩm vô hướng giữa Query và Key, chúng ta chia kết quả đó cho căn bậc hai của chiều dài của các vector (được gọi là **d_k**) để tránh vấn đề gradient vanishing khi các sản phẩm vô hướng có giá trị quá lớn:
+Một phiên bản cải tiến của Attention là **Scaled Dot-Product Attention**, được sử dụng trong các mô hình Transformer. Trong phương pháp này, thay vì tính trực tiếp sản phẩm vô hướng giữa Query và Key, chúng ta chia kết quả đó cho căn bậc hai của chiều dài của các vector (được gọi là $d_k$ ) để tránh vấn đề gradient vanishing khi các sản phẩm vô hướng có giá trị quá lớn:
 
 $$
 \text{Score}(Q, K) = \frac{Q^T K}{\sqrt{d_k}}
